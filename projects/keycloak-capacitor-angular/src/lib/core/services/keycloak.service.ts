@@ -11,7 +11,7 @@ import { HttpHeaders, HttpRequest } from '@angular/common/http';
 
 import { Subject, from } from 'rxjs';
 import { map } from 'rxjs/operators';
-import Keycloak from 'keycloak-js';
+import Keycloak from 'keycloak-capacitor';
 
 import {
   ExcludedUrl,
@@ -21,7 +21,7 @@ import {
 import { KeycloakEvent, KeycloakEventType } from '../interfaces/keycloak-event';
 
 /**
- * Service to expose existent methods from the Keycloak JS adapter, adding new
+ * Service to expose existent methods from the Keycloak Capacitor adapter (a fork of Keycloak JS), adding new
  * functionalities to improve the use of keycloak in Angular v > 4.3 applications.
  *
  * This class should be injected in the application bootstrap, so the same instance will be used
@@ -30,7 +30,7 @@ import { KeycloakEvent, KeycloakEventType } from '../interfaces/keycloak-event';
 @Injectable()
 export class KeycloakService {
   /**
-   * Keycloak-js instance.
+   * Keycloak-capacitor instance.
    */
   private _instance: Keycloak.KeycloakInstance;
   /**
@@ -83,10 +83,10 @@ export class KeycloakService {
   shouldUpdateToken: (request: HttpRequest<unknown>) => boolean;
 
   /**
-   * Binds the keycloak-js events to the keycloakEvents Subject
+   * Binds the keycloak-capacitor events to the keycloakEvents Subject
    * which is a good way to monitor for changes, if needed.
    *
-   * The keycloakEvents returns the keycloak-js event type and any
+   * The keycloakEvents returns the keycloak-capacitor event type and any
    * argument if the source function provides any.
    */
   private bindsKeycloakEvents(): void {
@@ -503,7 +503,7 @@ export class KeycloakService {
    * this Angular service does not support yet. Use with caution.
    *
    * @returns
-   * The KeycloakInstance from keycloak-js.
+   * The KeycloakInstance from keycloak-capacitor.
    */
   getKeycloakInstance(): Keycloak.KeycloakInstance {
     return this._instance;
@@ -532,7 +532,7 @@ export class KeycloakService {
   }
 
   /**
-   * Keycloak subject to monitor the events triggered by keycloak-js.
+   * Keycloak subject to monitor the events triggered by keycloak-capacitor.
    * The following events as available (as described at keycloak docs -
    * https://www.keycloak.org/docs/latest/securing_apps/index.html#callback-events):
    * - OnAuthError
@@ -543,7 +543,7 @@ export class KeycloakService {
    * - OnReady
    * - OnTokenExpire
    * In each occurrence of any of these, this subject will return the event type,
-   * described at {@link KeycloakEventType} enum and the function args from the keycloak-js
+   * described at {@link KeycloakEventType} enum and the function args from the keycloak-capacitor
    * if provided any.
    *
    * @returns

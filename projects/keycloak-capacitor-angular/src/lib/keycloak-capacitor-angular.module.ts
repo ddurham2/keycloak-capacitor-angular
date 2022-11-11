@@ -13,4 +13,4 @@ import { CoreModule } from './core/core.module';
 @NgModule({
   imports: [CoreModule]
 })
-export class KeycloakAngularModule {}
+export class KeycloakCapacitorAngularModule {}
