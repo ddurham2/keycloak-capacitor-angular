@@ -3,39 +3,39 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "keycloak-angular": {
-      "root": "projects/keycloak-angular",
-      "sourceRoot": "projects/keycloak-angular/src",
+    "keycloak-capacitor-angular": {
+      "root": "projects/keycloak-capacitor-angular",
+      "sourceRoot": "projects/keycloak-capacitor-angular/src",
       "projectType": "library",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/keycloak-angular/tsconfig.lib.json",
-            "project": "projects/keycloak-angular/ng-package.json"
+            "tsConfig": "projects/keycloak-capacitor-angular/tsconfig.lib.json",
+            "project": "projects/keycloak-capacitor-angular/ng-package.json"
           },
           "configurations": {
             "production": {
-              "project": "projects/keycloak-angular/ng-package.prod.json",
-              "tsConfig": "projects/keycloak-angular/tsconfig.lib.prod.json"
+              "project": "projects/keycloak-capacitor-angular/ng-package.prod.json",
+              "tsConfig": "projects/keycloak-capacitor-angular/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/keycloak-angular/src/test.ts",
-            "tsConfig": "projects/keycloak-angular/tsconfig.spec.json",
-            "karmaConfig": "projects/keycloak-angular/karma.conf.js"
+            "main": "projects/keycloak-capacitor-angular/src/test.ts",
+            "tsConfig": "projects/keycloak-capacitor-angular/tsconfig.spec.json",
+            "karmaConfig": "projects/keycloak-capacitor-angular/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
             "lintFilePatterns": [
-              "projects/keycloak-angular/**/*.ts",
-              "projects/keycloak-angular/**/*.html"
+              "projects/keycloak-capacitor-angular/**/*.ts",
+              "projects/keycloak-capacitor-angular/**/*.html"
             ]
           }
         }

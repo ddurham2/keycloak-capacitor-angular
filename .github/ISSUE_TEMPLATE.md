@@ -12,7 +12,7 @@ Please fill out the following information. Thanks!
 ### Versions.
 
 <!--
-keycloak-angular, angular and keycloak versions.
+keycloak-capacitor-angular, angular and keycloak versions.
 -->
 
 ### Repro steps.

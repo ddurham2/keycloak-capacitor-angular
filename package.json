@@ -1,18 +1,18 @@
 {
-  "name": "keycloak-angular",
-  "version": "12.1.0",
-  "description": "Easy Keycloak setup for Angular applications",
+  "name": "keycloak-capacitor-angular",
+  "version": "19.0.0",
+  "description": "Easy Keycloak setup for Capacitor-Angular applications",
   "scripts": {
     "clean": "shx rm -rf ./dist/",
-    "build": "npm run clean && ng build keycloak-angular --configuration production",
-    "test": "ng test keycloak-angular",
+    "build": "npm run clean && ng build keycloak-capacitor-angular --configuration production",
+    "test": "ng test keycloak-capacitor-angular",
     "lint": "ng lint && prettier -c .",
     "lint:fix": "prettier --write .",
     "typecheck": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mauriciovigolo/keycloak-angular.git"
+    "url": "git+ssh://git@github.com:ddurham2/keycloak-capacitor-angular.git"
   },
   "author": {
     "name": "Mauricio Gemelli Vigolo",
@@ -21,9 +21,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mauriciovigolo/keycloak-angular/issues"
+    "url": "https://github.com/ddurham2/keycloak-capacitor-angular/issues"
   },
-  "homepage": "https://github.com/mauriciovigolo/keycloak-angular#readme",
+  "homepage": "https://github.com/ddurham2/keycloak-capacitor-angular#readme",
   "keywords": [
     "angular",
     "authentication",

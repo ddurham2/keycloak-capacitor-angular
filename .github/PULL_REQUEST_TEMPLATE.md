@@ -2,7 +2,7 @@
 
 Please check if your PR fulfills the following requirements:
 
-* [ ] The commit message follows our [guidelines](https://github.com/mauriciovigolo/keycloak-angular/blob/main/CONTRIBUTING.md)
+* [ ] The commit message follows our [guidelines](https://github.com/ddurham2/keycloak-capacitor-angular/blob/main/CONTRIBUTING.md)
 * [ ] Tests for the changes have been added (for bug fixes / features)
 * [ ] Docs have been added / updated (for bug fixes / features)
 
