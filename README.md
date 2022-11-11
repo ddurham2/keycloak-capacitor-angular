@@ -1,4 +1,5 @@
-# Keycloak Angular
+# Keycloak-Capacitor-Angular
+TODO - read over this to ensure it's not grossly inaccurate after forking and modifying
 
 <!-- prettier-ignore-start -->
 [![License: MIT][license-mit-badge]][license-mit]
@@ -10,7 +11,7 @@
 [![Discord][discord-badge]][discord]
 <!-- prettier-ignore-end -->
 
-> Easy Keycloak setup for Angular applications.
+> Easy Keycloak setup for Capacitor-Angular applications.
 
 ---
 
@@ -28,9 +29,11 @@
 
 ## About
 
-This library helps you to use [keycloak-js](https://www.keycloak.org/docs/latest/securing_apps/index.html#_javascript_adapter) in Angular applications providing the following features:
+This library was forked from [keycloak-angular](https://github.com/mauriciovigolo/keycloak-angular) and modified to use [keycloak-capacitor](https://github.com/jy95/keycloak-capacitor) instead of [keycloak-js](https://www.keycloak.org/docs/latest/securing_apps/index.html#_javascript_adapter) directly.
 
-- A **Keycloak Service** which wraps the `keycloak-js` methods to be used in Angular, giving extra
+This library helps you to use [keycloak-capacitor](https://github.com/jy95/keycloak-capacitor) in Capacitor-Angular applications providing the following features:
+
+- A **Keycloak Service** which wraps the `keycloak-capacitor` methods to be used in Angular, giving extra
   functionalities to the original functions and adding new methods to make it easier to be consumed by
   Angular applications.
 - Generic **AuthGuard implementation**, so you can customize your own AuthGuard logic inheriting the authentication logic and the roles load.
@@ -44,14 +47,14 @@ This library helps you to use [keycloak-js](https://www.keycloak.org/docs/latest
 Run the following command to install both Keycloak Angular and the official Keycloak client library:
 
 ```sh
-npm install keycloak-angular keycloak-js
+npm install keycloak-capacitor-angular keycloak-capacitor
 ```
 
-Note that `keycloak-js` is a peer dependency of Keycloak Angular. This change allows greater flexibility of choosing the right version of the Keycloak client version for your project.
+Note that `keycloak-capacitor` is a peer dependency of Keycloak-Capacitor Angular. This change allows greater flexibility of choosing the right version of the Keycloak client version for your project.
 
 ### Versions
 
-| Angular | keycloak-js | keycloak-angular |       Support       |
+| Angular | keycloak-capacitor | keycloak-capacitor-angular |       Support       |
 | :-----: | :---------: | :--------------: | :-----------------: |
 |  14.x   |   18 - 19   |      12.x.x      | New Features / Bugs |
 |  14.x   |   10 - 17   |      11.x.x      | New Features / Bugs |
@@ -62,7 +65,7 @@ Only the latest version of Angular in the table above is actively supported. Thi
 
 _Note_: Only for keycloak-angular **v.9**, there is the need to add `allowSyntheticDefaultImports: true` in the tsconfig.json file in your project. This is related to this [issue in the keycloak project](https://github.com/keycloak/keycloak/issues/9045). From keycloak-angular v.10 on, there is no need to set this configuration.
 
-#### Choosing the right keycloak-js version
+#### Choosing the right keycloak-capacitor version
 
 The Keycloak client documentation recommends to use the same version of your Keycloak installation.
 

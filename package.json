@@ -30,6 +30,7 @@
     "authorization",
     "keycloak",
     "keycloak-js"
+    "keycloak-capacitor"
   ],
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.1.3",
