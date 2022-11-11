@@ -6,8 +6,8 @@
       "files": ["*.ts"],
       "parserOptions": {
         "project": [
-          "projects/keycloak-angular/tsconfig.lib.json",
-          "projects/keycloak-angular/tsconfig.spec.json"
+          "projects/keycloak-capacitor-angular/tsconfig.lib.json",
+          "projects/keycloak-capacitor-angular/tsconfig.spec.json"
         ],
         "createDefaultProgram": true
       },
