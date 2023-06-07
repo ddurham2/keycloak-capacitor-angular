@@ -1,6 +1,6 @@
 {
   "name": "keycloak-capacitor-angular",
-  "version": "19.0.0",
+  "version": "19.0.1",
   "description": "Easy Keycloak setup for Capacitor-Angular applications",
   "scripts": {
     "clean": "shx rm -rf ./dist/",
