@@ -1,6 +1,6 @@
 {
   "name": "keycloak-capacitor-angular",
-  "version": "19.0.1",
+  "version": "21.1.1",
   "description": "Easy Keycloak setup for Capacitor-Angular applications",
   "repository": {
     "type": "git",
@@ -27,12 +27,12 @@
     "oidc"
   ],
   "peerDependencies": {
-    "@angular/common": "^14",
-    "@angular/core": "^14",
-    "@angular/router": "^14",
-    "keycloak-capacitor": "^19 || ^20"
+    "@angular/common": "^15",
+    "@angular/core": "^15",
+    "@angular/router": "^15",
+    "keycloak-js": "^18 || ^19 || ^20 || ^21"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.1"
   }
 }
